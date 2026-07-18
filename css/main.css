@@ -227,12 +227,13 @@ button {
 /* --- Films grid --- */
 .films {
   width: 100%;
+  padding: 30px;
 }
 
 .films-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  gap: 30px;
 }
 
 .film-tile {
@@ -341,6 +342,13 @@ button {
 
 .page__body p:last-child {
   margin-bottom: 0;
+}
+
+.about-badge {
+  display: block;
+  width: clamp(5.5rem, 12vw, 7.5rem);
+  height: auto;
+  margin-top: 2rem;
 }
 
 .contact-links {
@@ -512,8 +520,13 @@ button {
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
+  .films {
+    padding: 20px;
+  }
+
   .films-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .fashion-masonry {
