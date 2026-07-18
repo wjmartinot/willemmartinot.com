@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willem Martinot | Photographer</title>
+  <meta name="description" content="Willem Martinot — cinematic photography and film for international clients. Fashion, concerts, portraits and commercial work.">
+  <link rel="canonical" href="https://www.willemmartinot.com/">
+  <meta property="og:title" content="Willem Martinot | Photographer">
+  <meta property="og:description" content="Cinematic photography and film for international clients.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.willemmartinot.com/">
+  <meta property="og:image" content="/media/hero/poster.jpg">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="site-header" data-site-header></header>
+
+  <section class="hero" aria-label="Showreel">
+    <div class="hero__media">
+      <img src="/media/hero/poster.jpg" alt="" width="1920" height="1080" fetchpriority="high">
+      <!-- Replace src with final reel MP4 when ready -->
+      <video muted loop playsinline preload="metadata" poster="/media/hero/poster.jpg" aria-hidden="true">
+        <source src="/media/hero/reel.mp4" type="video/mp4">
+      </video>
+      <span class="placeholder-note">Hero video placeholder</span>
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <p>hey — I'm Willem Martinot, a photographer with a cinematic eye for fashion, music and commercial stories.</p>
+    </div>
+    <button class="hero-scroll" type="button" data-scroll-to="#films" aria-label="Scroll to films">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M9.5 12L16 19l6.5-7H24v1.5L16 22 8 13.5V12h1.5z" fill="white"/>
+      </svg>
+    </button>
+  </section>
+
+  <section class="films" id="films" aria-label="Films">
+    <div class="films-grid">
+      <a class="film-tile" href="/films/north-sea-jazz/">
+        <img class="film-tile__poster" src="/media/films/north-sea-jazz/poster.jpg" alt="North Sea Jazz" width="1920" height="1080" loading="lazy">
+        <video class="film-tile__video" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/media/films/north-sea-jazz/preview.mp4" type="video/mp4">
+        </video>
+        <div class="film-tile__overlay">
+          <h2 class="film-tile__title">North Sea Jazz</h2>
+        </div>
+      </a>
+      <a class="film-tile" href="/films/olvis-lace/">
+        <img class="film-tile__poster" src="/media/films/olvis-lace/poster.jpg" alt="Olvi's Lace" width="1920" height="1080" loading="lazy">
+        <video class="film-tile__video" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/media/films/olvis-lace/preview.mp4" type="video/mp4">
+        </video>
+        <div class="film-tile__overlay">
+          <h2 class="film-tile__title">Olvi’s Lace</h2>
+        </div>
+      </a>
+      <a class="film-tile" href="/films/corporate-reel/">
+        <img class="film-tile__poster" src="/media/films/corporate-reel/poster.jpg" alt="Corporate Reel" width="1920" height="1080" loading="lazy">
+        <video class="film-tile__video" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/media/films/corporate-reel/preview.mp4" type="video/mp4">
+        </video>
+        <div class="film-tile__overlay">
+          <h2 class="film-tile__title">Corporate Reel</h2>
+        </div>
+      </a>
+      <a class="film-tile" href="/films/fashion-editorial/">
+        <img class="film-tile__poster" src="/media/films/fashion-editorial/poster.jpg" alt="Fashion Editorial" width="1920" height="1080" loading="lazy">
+        <video class="film-tile__video" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/media/films/fashion-editorial/preview.mp4" type="video/mp4">
+        </video>
+        <div class="film-tile__overlay">
+          <h2 class="film-tile__title">Fashion Editorial</h2>
+        </div>
+      </a>
+      <a class="film-tile" href="/films/concert-night/">
+        <img class="film-tile__poster" src="/media/films/concert-night/poster.jpg" alt="Concert Night" width="1920" height="1080" loading="lazy">
+        <video class="film-tile__video" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/media/films/concert-night/preview.mp4" type="video/mp4">
+        </video>
+        <div class="film-tile__overlay">
+          <h2 class="film-tile__title">Concert Night</h2>
+        </div>
+      </a>
+      <a class="film-tile" href="/films/portrait-series/">
+        <img class="film-tile__poster" src="/media/films/portrait-series/poster.jpg" alt="Portrait Series" width="1920" height="1080" loading="lazy">
+        <video class="film-tile__video" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/media/films/portrait-series/preview.mp4" type="video/mp4">
+        </video>
+        <div class="film-tile__overlay">
+          <h2 class="film-tile__title">Portrait Series</h2>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Willem Martinot © <span data-year></span></p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>document.querySelector("[data-year]").textContent = new Date().getFullYear();</script>
+</body>
+</html>
