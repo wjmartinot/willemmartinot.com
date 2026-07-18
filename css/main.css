@@ -12,6 +12,7 @@
   --color-text-muted: rgba(255, 255, 255, 0.65);
   --color-placeholder: #1a1a1a;
   --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-brand: "Libre Franklin", "Helvetica Neue", sans-serif;
   --header-h: 4.5rem;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -109,8 +110,9 @@ button {
 
 .brand__name {
   display: block;
+  font-family: var(--font-brand);
   font-size: clamp(1.35rem, 2.4vw, 2rem);
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -191,11 +193,11 @@ button {
 
 .hero__copy p {
   margin: 0;
+  font-family: var(--font-brand);
   font-size: clamp(1.75rem, 4.2vw, 3.25rem);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.05;
   letter-spacing: 0.01em;
-  text-transform: lowercase;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
 }
 
